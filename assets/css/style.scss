@@ -1,21 +1,24 @@
-/* Write your CSS! */
+// Variables
+$yellow:  #FFB03B;
+$orange:  #B64926;
+$red:     #8E2800;
+$beige:   #FFF0A5;
+$green:   #468966;
+
 
 html {
   height: 100%;
 }
 
 body {
-  background: url(apple-touch-icon.png) no-repeat center center;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
   /* Styles for mobile */
 
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
   /* Styles for tablet */
 
 }
