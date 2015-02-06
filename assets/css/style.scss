@@ -1,16 +1,67 @@
 // Variables
-$yellow:  #FFB03B;
-$orange:  #B64926;
-$red:     #8E2800;
-$beige:   #FFF0A5;
-$green:   #468966;
+$grey:      #484A47;
+$green:     #C1CE96;
+$offwhite:  #ECEBF0;
+$turq:      #687D77;
+$brown:     #353129;
+
+
+
 
 
 html {
-  height: 100%;
+  height:     100%;
 }
 
 body {
+  height:     100%;
+  background: $grey;
+  color:      $offwhite;
+}
+
+.main {
+  position:   relative;
+  width:      100%;
+  max-width:  800px;
+  margin:     0 auto;
+  padding:    2rem;
+}
+
+.chevs {
+  position: absolute;
+  top: 3rem;
+  right: -3.5rem;
+  i {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: -1.2rem;
+    color: $green;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-fill-mode:both;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-duration: 1.5s;
+    animation-name: fadeInDown;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+
+    &:nth-child(1) {
+      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+
+    }
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+
+    }
+    &:nth-child(3) {
+      animation-delay: 0.8s;
+      -webkit-animation-delay: 0.8s;
+
+    }
+  }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
