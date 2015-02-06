@@ -4,6 +4,21 @@ $green:     #C1CE96;
 $offwhite:  #ECEBF0;
 $turq:      #687D77;
 $brown:     #353129;
+$orange:    #C47A18;
+$red:       #C43215;
+
+.grey     { color: $grey }
+.green    { color: $green }
+.offwhite { color: $offwhite }
+.turq     { color: $turq }
+.brown    { color: $brown }
+.orange   { color: $orange; }
+.red      { color: $red; }
+.black    { color: #000; }
+
+.dkred    { color: mix(#000, $red, 10%); }
+.vdkred   { color: mix(#000, $red, 25%); }
+.vvdkred  { color: mix(#000, $red, 45%); }
 
 
 // Font weights
@@ -12,18 +27,10 @@ $semibold:  600;
 $bold:      700;
 $extrabold: 800;
 
-.fw-normal {
-  font-weight: 400;
-}
-.fw-semibold {
-  font-weight: 600;
-}
-.fw-bold {
-  font-weight: 700;
-}
-.fw-extrabold {
-  font-weight: 800
-}
+.fw-normal    { font-weight: 400; }
+.fw-semibold  { font-weight: 600; }
+.fw-bold      { font-weight: 700; }
+.fw-extrabold { font-weight: 800; }
 
 
 *, *:before, *:after {
@@ -51,11 +58,12 @@ body {
   height: 11.4rem;
   background: $turq;
 }
+
 .main {
   position:   relative;
   z-index:    2;
   width:      100%;
-  max-width:  800px;
+  max-width:  850px;
   margin:     0 auto;
   padding:    2rem 0;
   text-align: center;
@@ -67,6 +75,8 @@ body {
   }
 
   .line {
+    position: relative;
+    z-index: 1;
     display: block;
     font-weight: $bold;
     text-align: center;
@@ -74,6 +84,65 @@ body {
     &.vbig {
       font-weight: $extrabold;
     }
+  }
+
+  .block {
+    padding: 5rem 0;
+  }
+
+  .block1 {
+    padding-top: 0rem !important;
+  }
+
+  .block2 {
+    background: $brown;
+  }
+
+  .block3 {
+    background: $orange;
+    color: $grey;
+  }
+
+  .block4 {
+    background: #000;
+  }
+}
+.z3 { z-index: 3; }
+.z4 { z-index: 4; }
+.z5 { z-index: 5; }
+.z6 { z-index: 6; }
+.z7 { z-index: 7; }
+.z8 { z-index: 8; }
+
+
+.orangeunder {
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    z-index: -1;
+    content: " ";
+    position: absolute;
+    left: 6rem;
+    right: 6rem;
+    bottom: 1px;
+    height: 4px;
+    background: $orange;
+  }
+}
+.redunder {
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    z-index: -1;
+    content: " ";
+    position: absolute;
+    left: 6rem;
+    right: 6rem;
+    bottom: 0.2em;
+    height: 10px;
+    background: $red;
   }
 }
 
