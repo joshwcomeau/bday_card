@@ -22,4 +22,25 @@ $(document).ready(function(){
     width: 80,
     letterSpacing: 5
   });
+
+  $(".line.bigcenter").percentext({
+    width: 70,
+    letterSpacing: -10
+  });
+
+  $(".line.bigleft").percentext({
+    width: 65,
+    letterSpacing: -10
+  }).css({
+    "text-align": "left",
+    "padding-left": '2rem'
+  });
+
+  $(".line.bigright").percentext({
+    width: 80,
+    letterSpacing: -10
+  }).css({
+    "text-align": "right", 
+    "padding-left": '2rem'
+  });
 });
